@@ -19,7 +19,6 @@ const SuffixTree:React.FC<ComponentProps<'div'>> = ({...props}) => {
         <div className='flex gap-2-rem align-items-center'>
             <h3>Suffix Tree</h3>
             <button className='height-max-content button' disabled={command !== 4} onClick={reDrawTree}>redraw tree</button>
-            <button className='height-max-content button' disabled={command !== 0 && command !== 4} onClick={() => {setIsOpen(true); setCurrTitle('timer')}}>set timer</button>
             <button className='height-max-content button' onClick={() => setIsHidden(prev => !prev)}>{isHidden ? 'show' : 'hide'}</button>
             <button className='height-max-content button thick-i text-transformation-none' onClick={() => {setIsOpen(true); setCurrTitle('suffix tree')}}>i</button>
         </div>

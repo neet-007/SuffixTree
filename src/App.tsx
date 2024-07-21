@@ -29,7 +29,7 @@ function App() {
     };
 
     const textarea = InputRef.current.children[1] as HTMLTextAreaElement;
-    if (str[str.length - 1] !== undefined && !ALPHABET.includes(str[str.length - 1])){
+    if (str[str.length - 1] !== undefined && str[str.length - 1] !== ' ' && !ALPHABET.includes(str[str.length - 1])){
       textarea.maxLength = textarea.textLength;
     }else{
       textarea.removeAttribute('maxLength');
